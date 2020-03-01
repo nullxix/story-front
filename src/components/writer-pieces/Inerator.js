@@ -11,13 +11,13 @@ export default props => {
         }
     }
     return (
-        <>
+        <div>
             <input 
                 type='text' 
                 value={props.writerText}
                 onChange={props.handleWriterChange}
                 onKeyPress={handleKeyPress}
             />
-        </>
+        </div>
     )
 }
