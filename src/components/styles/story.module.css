@@ -1,0 +1,3 @@
+.story_mask {
+    mask-image: linear-gradient(to bottom, transparent 15px, black 100px);
+}

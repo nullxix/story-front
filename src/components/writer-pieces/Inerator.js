@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {writer} from '../styles/writer.module.css'
 
 export default props => {
 
@@ -11,8 +11,14 @@ export default props => {
         }
     }
     return (
-        <div>
+        <div
+            className = {writer}
+        >
             <input 
+                style={{
+                    boxSizing: 'border-box',
+                    width: '100%',
+                }}
                 type='text' 
                 value={props.writerText}
                 onChange={props.handleWriterChange}

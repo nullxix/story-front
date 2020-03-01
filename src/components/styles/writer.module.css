@@ -1,0 +1,8 @@
+.writer {
+    padding: 5px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background: rgb(68, 128, 146);
+    border-radius: 4px;
+}

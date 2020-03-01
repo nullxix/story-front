@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Nav, ShortStory, Writer} from '../partials/index.js'
 import {socketeer} from '../web-sockets/index.js'
+import {center_big, text_holder} from '../styles/main.module.css'
 
 export default props => {
     const   [story, setStory] = useState(''),
@@ -58,22 +59,25 @@ export default props => {
     const submitWord = () => {
         sendWord(writerText)
     }
-    
+
     const registerCB = () => {
         receiveBroadcast({storyCB, winCB, memoCB})
     }
     registerCB()
 
     return (
+        <>
+        {/* <Nav/> */}
         <div
-            style={{
-                width: '70%',
-                margin: 'auto',
-                background: '#ffeeef',
-                padding: '10px'
-            }}
+            className={`${center_big} ${text_holder}`}
+            // style={{
+            //     width: '70%',
+            //     margin: 'auto',
+            //     background: '#ffeeef',
+            //     padding: '10px'
+            // }}
         >
-            <Nav/>
+            
             <ShortStory story={story}/>
             <Writer 
                 text={writerText} 
@@ -82,5 +86,6 @@ export default props => {
                 memo={memo}
             />
         </div>
+        </>
     )
 }

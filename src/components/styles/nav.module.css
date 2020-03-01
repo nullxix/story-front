@@ -1,0 +1,11 @@
+.nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #5b5bc4
+}
+
+.active {
+    color: #d3623f
+}
+

@@ -1,10 +1,13 @@
 import React from 'react'
 import {Memo, Inerator} from '../writer-pieces/index.js'
+import {center_little} from '../styles/main.module.css'
 
 export default props => {
 
     return (
-        <div>
+        <div
+            className={center_little}
+        >
             {/* #ShouldHaveUsedContext */}
             <Inerator
                 text={props.writerText} 

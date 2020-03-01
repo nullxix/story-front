@@ -1,0 +1,26 @@
+.text_holder {
+    color: #606c77
+}
+
+.hidden {
+    display: none;
+}
+
+.fun {
+    transition-property: all;
+    transition-delay: 0;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.center_big {
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+}
+
+.center_little {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+}
