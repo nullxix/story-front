@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Nav, ShortStory, Writer} from '../partials/index.js'
+import {Nav, ShortStory, Head, Writer} from '../partials/index.js'
 import {socketeer} from '../web-sockets/index.js'
 import {center_big, text_holder} from '../styles/main.module.css'
 
@@ -68,6 +68,7 @@ export default props => {
     return (
         <>
         {/* <Nav/> */}
+        <Head/>
         <div
             className={`${center_big} ${text_holder}`}
             // style={{
@@ -77,7 +78,6 @@ export default props => {
             //     padding: '10px'
             // }}
         >
-            
             <ShortStory story={story}/>
             <Writer 
                 text={writerText} 

@@ -12,7 +12,7 @@ export default props => {
     }
     return (
         <div
-            className = {writer}
+            // className = {writer}
         >
             <input 
                 style={{
