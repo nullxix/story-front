@@ -11,7 +11,7 @@ export default props => {
             {/* #ShouldHaveUsedContext */}
             <Inerator
                 text={props.writerText} 
-                handleChange={props.handleWriterChange} 
+                handleChange={props.handleChange} 
                 sendWord={props.sendWord} 
             />
             <Memo memo={props.memo}/>

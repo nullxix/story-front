@@ -6,6 +6,8 @@ ww.onopen = event => {
 }
 
 const sendWord = (word) => {
+    console.log('sending,', word)
+    console.log(JSON.stringify({word}))
     ww.send( JSON.stringify({word}) )
 }
 

@@ -12,7 +12,7 @@ export default props => {
 
     const {sendWord, receiveBroadcast} = socketeer
 
-    const storyCB = (_story, {init = false}) => {
+    const storyCB = (_story, init = false) => {
         if(init){
             setStory(_story)
         } else {
@@ -53,10 +53,12 @@ export default props => {
     
 
     const handleWriterChange = (txt) => {
+        console.log('WT:', writerText)
         setWriterText(txt)
     }
 
     const submitWord = () => {
+        console.log('submitting: ', writerText)
         sendWord(writerText)
     }
 

@@ -10,6 +10,11 @@ export default props => {
                 break;
         }
     }
+
+    const handleChange = event => {
+        let val = event.target.value
+        props.handleChange(val)
+    }
     return (
         <div
             // className = {writer}
@@ -21,7 +26,7 @@ export default props => {
                 }}
                 type='text' 
                 value={props.writerText}
-                onChange={props.handleWriterChange}
+                onChange={handleChange}
                 onKeyPress={handleKeyPress}
             />
         </div>
