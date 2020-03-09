@@ -1,5 +1,5 @@
 
-const ww = new WebSocket('ws://mywebsitecanbeatupyour.website:443')
+const ww = new WebSocket('ws://mywebsitecanbeatupyour.website/story/socket')
 
 ww.onopen = event => {
     console.log('Websocket connection opened')
