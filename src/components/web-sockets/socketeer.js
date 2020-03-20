@@ -1,5 +1,5 @@
 
-const ww = new WebSocket('wss://www.mywebsitecanbeatupyour.website/socket')
+const ww = new WebSocket('wss://mywebsitecanbeatupyour.website/socket')
 
 ww.onerror = (event) => {
     console.log(event)
