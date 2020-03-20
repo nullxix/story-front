@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {Nav, ShortStory, Head, Writer} from '../partials/index.js'
 import {socketeer} from '../web-sockets/index.js'
 import {center_big, text_holder} from '../styles/main.module.css'
+import '../styles/global.css'
 
 export default props => {
     const   [story, setStory] = useState(''),
@@ -38,7 +39,7 @@ export default props => {
         //display message, then erase after a few seconds
         //if there's a message already,
         //make sure the erase events don't overlap
-        if(memoResetter){
+        if(memoResetter && memoResetter.clearTimeout){
             memoResetter.clearTimeout()
         }
         setMemo(msg)

@@ -6,7 +6,8 @@ export default props => {
         <div
             style={{
                 width: '100%',
-                background: '#444',
+                // background: '#164145',
+                background: '#082022',
                 color: 'white',
                 textAlign: 'center',
                 fontFamily: '"Spartan"',

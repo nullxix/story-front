@@ -1,5 +1,5 @@
 import React from 'react'
-import {story_mask} from '../styles/story.module.css'
+import {story_mask, story_default} from '../styles/story.module.css'
 
 export default props => {
     const {story} = props
@@ -10,7 +10,7 @@ export default props => {
     
     return (
         <div
-            className={className}
+            className={className + " " + story_default}
         >
             {story}
         </div>

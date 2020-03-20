@@ -1,3 +1,9 @@
 .story_mask {
     mask-image: linear-gradient(to bottom, transparent 15px, black 100px);
 }
+
+.story_default {
+    /* color: rgb(221, 255, 221); */
+    /* color: #9de4bd */
+    color: #9ddfe4
+}
