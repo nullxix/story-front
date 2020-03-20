@@ -22,7 +22,10 @@ export default props => {
             <input 
                 style={{
                     boxSizing: 'border-box',
-                    width: '100%',
+                    width: '50%',
+                    padding: '4px',
+                    fontSize: '18px',
+                    outline: 'none',
                 }}
                 type='text' 
                 value={props.writerText}
